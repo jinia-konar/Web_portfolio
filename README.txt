@@ -1,1 +1,1 @@
-Use this link (http://bit.ly/jiniaKonarWebPortfolio) to view my online web portfolio.
+Use this link (https://1op9xv6w0q.codesandbox.io/) to view my online web portfolio.
