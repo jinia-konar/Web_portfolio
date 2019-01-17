@@ -1,0 +1,126 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(41, 9, 9, 0.651);
+}
+/*global*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: black;
+  padding-top: 15px;
+  min-height: 70px;
+  border-bottom: grey 2.5px solid;
+}
+
+header a {
+  text-decoration: none;
+  color: grey;
+  font-size: 20px;
+}
+header a:hover {
+  color: white;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+}
+header li {
+  display: inline;
+  float: left;
+  padding: 0 20px 0 20px;
+}
+header .logo {
+  float: left;
+  margin-bottom: 10px;
+}
+header nav {
+  float: right;
+  margin-top: 20px;
+}
+
+/*footer*/
+footer {
+  background-color: black;
+  color: grey;
+  border-top: grey 2.5px solid;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+.m1 {
+  flex: 1;
+  flex-basis: 25%;
+}
+.m2 {
+  flex: 2;
+  margin-top: 20px;
+  align-content: flex-start;
+}
+.m2 ul {
+  display: flex;
+  text-decoration: none;
+}
+.m2 li {
+  list-style: none;
+}
+.m2 li a {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 30px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+.m2 li a .fa {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+}
+.m2 li a:hover .fa {
+  transform: rotateY(360deg);
+}
+
+.m3 {
+  flex: 1;
+}
+
+/*showcase*/
+.showcase::after {
+  content: "";
+  height: 70vh;
+  width: 100%;
+  background-image: url(https://uploads.codesandbox.io/uploads/user/e30777f9-2afd-48e4-a165-f3abe3c7cd84/Ve6X-showcase3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  transition: all 1000ms;
+}
+.showcase:hover::after {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+.showcase h1 {
+  position: absolute;
+  z-index: 1;
+  text-align: right;
+  top: 30%;
+  right: 11%;
+  margin-right: 0;
+  transition: all 1000ms;
+}
